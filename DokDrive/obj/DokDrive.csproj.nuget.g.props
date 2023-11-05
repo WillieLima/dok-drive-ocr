@@ -13,7 +13,11 @@
     <SourceRoot Include="C:\Users\Wonka\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)pdfiumviewer.native.x86_64.no_v8-no_xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86_64.no_v8-no_xfa.props" Condition="Exists('$(NuGetPackageRoot)pdfiumviewer.native.x86_64.no_v8-no_xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86_64.no_v8-no_xfa.props')" />
+    <Import Project="$(NuGetPackageRoot)pdfiumviewer.native.x86.no_v8-no_xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86.no_v8-no_xfa.props" Condition="Exists('$(NuGetPackageRoot)pdfiumviewer.native.x86.no_v8-no_xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86.no_v8-no_xfa.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_Bcl_Build Condition=" '$(PkgMicrosoft_Bcl_Build)' == '' ">C:\Users\Wonka\.nuget\packages\microsoft.bcl.build\1.0.14</PkgMicrosoft_Bcl_Build>
+    <PkgPdfiumViewer Condition=" '$(PkgPdfiumViewer)' == '' ">C:\Users\Wonka\.nuget\packages\pdfiumviewer\2.13.0</PkgPdfiumViewer>
   </PropertyGroup>
 </Project>
