@@ -86,7 +86,7 @@ namespace DokDrive.Forms
             catch(COMException ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message);
             }
         }
     }
